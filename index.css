@@ -1,0 +1,563 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#161616;	
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#353638a6; /*cor nave bar*/
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
+}
+ 
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#e8e8eb;
+	font-size: 20px;
+	
+}
+.lang{
+	color:#292929;
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:#ce0d0d;
+	font-family:Poppins;
+}
+.toggle{
+	display: none;
+}
+.active a,
+.menu li a:hover{
+	background-color:#bcbcbe42;
+	color:#FFF!important;
+	font-weight: bold;
+	transition: all ease 0.10s;
+}
+/* +++++++++++++++++++++++++fim navbar++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+#inicio{
+	width:100%;
+	height: 100vh;
+
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 5% 0px 5%;
+	position: relative;
+}
+.about-text{
+	font-family: calibri;
+	width: 50%;
+}
+.about-text h1{
+	font-size: 5rem;
+	color:#17d1ac;
+}
+.about-text h2{
+	font-size: 3rem;
+	color:#FFFFFF;
+	font-weight: 400;
+}
+.about-text h1,h2{
+	margin: 0px;
+	padding: 0px;
+}
+.about-text p{
+	font-size: 1.2rem;
+	color:rgba(255,255,255,0.90);
+	
+}
+.about-text button{
+	width: 180px;
+	height: 40px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	background-color:#17d1ac;
+}
+.about-text button:hover{
+	background-color: #FFFFFF;
+	transition: all ease 0.3s;
+}
+
+
+
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Esta linha garante que o plano de fundo fique atrás do conteúdo */
+}
+
+.background img {
+    
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* +++++++++++++++++++++++++++++++++++Quem foi o SM e os apoiadores+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+#services{
+width:100%;
+height:20vh;
+box-sizing: border-box;
+font-family: calibri;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-top: 40px ;
+
+}
+
+.s-heading h1 {
+	color:#17d1ac;
+	font-size: 3rem;
+	margin: 0px;
+	padding: 0px;
+	background-color: rgba(6, 17, 29, 0.61);
+
+
+
+
+}
+
+
+
+.s-heading p {
+color:rgb(255, 230, 230);
+font-size: 1rem;
+margin: 0px;
+padding: 0px;
+
+margin-left: 1000px;
+
+font-family: calibri;
+color:#FFFFFF;
+background-color: #151515;
+padding: 0px;
+position: absolute;
+
+transform: translateX(-50%);
+font-size: 18px;
+border-radius: 0px 0px 10px 10px;
+box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+
+
+}
+.s-heading{
+text-align: center;
+margin: 20px 0px;
+}
+.s-box{
+background-color: #2B2B2B;
+width:500px;
+height: 360px;
+margin: 90px;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+position: relative;
+}
+.b-container{
+display: flex;
+justify-content: center;
+align-content: center;
+
+
+}
+.s-b-img{
+width: 98%;
+height: 60%;
+
+}
+.s-b-img img{
+width:100%;
+height: 100%;
+
+}
+.s-b-text{
+width: 100%;
+height: 30%;
+background-color:#1E1E1E;
+display:flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.s-b-text a{
+margin: 0px;
+color:#FFFFFF;
+font-size: 1.2rem;
+font-family: calibri;
+display: block;
+display: -webkit-box;
+max-width: 80%;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.s-b-text a:hover{
+color:rgba(255,255,255,0.50)
+}
+.s-type{
+font-family: calibri;
+color:#FFFFFF;
+background-color: #151515;
+padding: 10px 15px;
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+font-size: 18px;
+border-radius: 0px 0px 10px 10px;
+box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+.s-box:hover{
+transform:translateY(-10px);
+transition: all ease 0.3s;
+
+}
+
+/* +++++++++++++++++++++++++++++++++++● Atividades da sprint 01
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* width */
+.t-slider-box-text-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .t-slider-box-text-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .t-slider-box-text-container::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .t-slider-box-text-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+/*==testimonials==================*/
+#testimonials{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.testimonials-container{
+    max-width: 1120px;
+    width: 90%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.t-heading-slider{
+    width: 100%;
+}
+.testimonials-heading-main h4{
+    font-size: 4vw;
+    color: #f1ebeb;
+    text-align: center;
+    font-weight: 600;
+	background-color: #000000a4;
+
+}
+.t-heading-slider{
+    margin-top: 50px;
+}
+.t-heading-slider h5{
+    color: #252525;
+    font-size: 32px;
+    font-weight: 300;
+}
+.mySwipertesti{
+    height: 411px !important;
+}
+.t-slider-box{
+    display: grid;
+    grid-template-columns: 343px 1fr;
+    width: 100%;
+    height: 100%;
+}
+.testimonials-slider{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    position: relative;
+}
+.t-slider-box-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.t-slider-box-img img{
+    width: 100%;
+    height: 411px;
+    object-fit: cover;
+    object-position: center;
+}
+.t-slider-box-text{
+    padding: 0px;/*0em 2em*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    max-width: 0px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.mySwipertesti .swiper-slide-active .t-slider-box-text{
+    max-width: 100%;
+    padding: 0em 2em;
+    animation: animation 1s;
+}
+.mySwipertesti .swiper-slide-active .t-slider-box{
+    width: 90%;
+    margin-right: auto;
+}
+@keyframes animation{
+    0%{
+        max-width: 0%;
+        padding: 0px;
+    }
+    30%{
+        max-width: 0%;
+        padding: 0px;
+    }
+    100%{
+        max-width: 100%;
+        padding: 0em 2em;
+    }
+}
+.t-slider-box-text h6{
+    font-size: 27px;
+    color: #1f1f1f;
+    font-weight: 500;
+    overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+
+}
+.t-slider-box-text strong{
+    color: #ccab99;
+    font-size: 20px;
+    font-weight: 500;
+}
+.t-slider-box-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 230px;
+    overflow-y: scroll;
+    margin-top: 20px;
+    padding-right: 15px;
+}
+.t-slider-box-text-container span{
+    font-size: 16px;
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.t-slider-box-text-container p{
+    color: #313131;
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 0.2px;
+}
+.t-slider-box-text-container p:nth-child(2){
+    margin-top: 10px;
+}
+.t-slider-box-text-container p:last-child{
+    margin-bottom: 0px;
+}
+.t-slider-box-text-container p b{
+    font-weight: 600;
+}
+.t-slider-box-text-flow{
+    display: flex;
+    flex-direction: column;
+}
+.slider-btns{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+    z-index: 110;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    position: static !important;
+}
+
+.swiper-button-prev{
+    margin-left: -50px;
+}
+.swiper-button-next{
+    margin-right: -50px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    color: #2b2b2b;
+    text-shadow: 2px 2px 16px rgba(16, 92, 179, 0.22);
+    font-size: 32px !important;
+}
+@media(max-width:810px){
+    .mySwipertesti{
+        height: 100% !important;
+    }
+    .t-slider-box{
+        display: grid;
+        grid-template-columns:1fr;
+        width: 100%;
+        height:100%;
+    }
+    .mySwipertesti .swiper-slide-active .t-slider-box{
+        width: 100%;
+    }
+
+    .t-slider-box-text h6{
+        font-size: 23px;
+        -webkit-line-clamp: 2;
+    }
+    .t-slider-box-text{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .mySwipertesti .swiper-slide-active .t-slider-box-text{
+        max-height: 100%;
+        animation: none;
+        padding: 3em 2em;
+    }
+    .slider-btns{
+        position: static;
+        transform: translate(0%, 0%);
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .t-slider-box-text div{
+        display: none;
+        animation: fade 0.3s;
+    }
+    @keyframes animation{
+        0%{
+            max-height: 0%;
+            padding: 0px;
+        }
+        30%{
+            max-height: 0%;
+            padding: 0px;
+        }
+        100%{
+            max-height: 100%;
+            padding: 3em 2em;
+        }
+    }
+    .testimonials-heading-main h4{
+        font-size: 2rem;}
+    .t-heading-slider h5{
+        font-size: 1.6rem;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        font-size: 1.5rem !important;
+        font-weight: 700;
+}
+    
+.swiper-button-prev{
+    margin-left: -0px;
+}
+.swiper-button-next{
+    margin-right: -0px;
+}
+}
+.t-slider-box-text div{
+    display: none;
+    animation: fade 2s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.mySwipertesti .swiper-slide-active .t-slider-box-text div{
+    display: block;
+}
+.swiper-slide{
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+}
